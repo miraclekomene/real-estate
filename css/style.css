@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+RO+Guides&family=Playwrite+VN+Guides&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background-color: #9BDDFE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-img{
+    height: 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    gap: 8px;
+
+}
+
+/* hero section */
+.hero{
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px; 
+}
+
+.hero h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    font-style: bold;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 32px;
+    font-weight: 400;
+    line-height: 100%;
+    font-style: regular;
+}
+
+.search-bar{
+    align-items: center;
+    padding: 13px 55px;
+    width: 636px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}   
+.search-icon{
+    position: relative;
+    right: 255px;
+    bottom: 60px;
+    cursor: pointer;
+}
+.filter-icon{
+    position: relative;
+    left: 255px;
+    bottom: 60px;
+    cursor: pointer;
+}
+
+.request-tour{
+    background-color: #217CA9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 36px;
+}
+.request-tour p{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    font-style: bold;
+}
+.request-tour button{
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.title-section{
+    margin: 32px auto;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.apartment-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    gap: 24px;
+    padding: 0 24px 32px 24px;
+}
+.card{
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.card-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.price{
+    color: #217CA9;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.location, .details{
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 16px;
+}
+.card-content button{
+    background-color: #217CA9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card-content button:hover{
+    background-color: #1A5E7A;
+}
+
+.view-more{
+    display: block;
+    margin: 0 auto 32px auto;
+    background-color: #217CA9;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* blog section */
+.blog-posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 0 24px 32px 24px;
+    margin-bottom: 32px;
+}
+.blog-card{
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 16px;
+}
+.blog-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+.blog-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.blog-content{
+    padding: 16px;
+}
+.blog-content h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.blog-content p{
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 16px;
+}
+.blog-content .read-more{
+    background-color: #217CA9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* footer  */
+footer{
+    background-color: #217CA9;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    
+}
+footer .footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-bottom: 16px;
+    padding: 0 24px;
+    text-align: left;
+}
+footer .footer-content .footer-section h3 {
+    margin-bottom: 20px;
+}
+footer .footer-content .footer-section ul li{
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* Responsive Design */
+@media (max-width: 768px){
+    .hero h1{
+        font-size: 36px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .search-bar{
+        width: 100%;
+        padding: 13px 45px;
+    }
+    .search-icon{
+        right: 140px;
+        bottom: 60px;
+    }
+    .filter-icon{
+        left: 140px;
+        bottom: 60px;
+    }
+}
+@media (max-width: 480px){
+    .hero h1{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 16px;
+    }
+    header{
+        flex-direction: column;
+        gap: 16px;
+    }
+}
