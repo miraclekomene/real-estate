@@ -462,6 +462,12 @@ footer a:hover{
     object-fit: cover;
 }
 
+.login-form-wrapper{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .login-form-wrapper h1{
     font-size: 36px;
     font-weight: 700;
@@ -477,8 +483,9 @@ footer a:hover{
     flex-direction: column;
     margin-bottom: 16px;
 }
-.login-form-wrapper label, .forgotpassword{
-    font-size: 16px;
+
+.login-form-wrapper label:not(.remember-me-label), .forgotpassword {
+    font-size: 15px;
     margin-bottom: 8px;
     font-weight: 700;
 }
